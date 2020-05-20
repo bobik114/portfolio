@@ -1,26 +1,16 @@
 {
-  "name": "folio",
+  "name": "portfolio2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bobik114/folio.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bobik114/folio/issues"
-  },
-  "homepage": "https://github.com/bobik114/folio#readme",
+  "description": "",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^4.14.1",
-    "sass": "^1.26.5"
+    "gulp-sass": "^4.1.0"
   }
 }
