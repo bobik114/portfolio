@@ -327,6 +327,7 @@ textarea {
 
 .navbar {
   position: fixed;
+  background-color: #fff;
   width: 100vw;
   box-shadow: 0 4px 8px 0px lightgray; }
   .navbar .navbar__container {
@@ -426,7 +427,12 @@ header {
   box-shadow: 0 0 10px 0 #ff4500 inset, 0 0 10px 4px #ff4500;
   color: #ff4500; }
 
+#about {
+  height: 100vh;
+  background-color: lightblue; }
+
 body {
   margin: 0;
   font-family: 'Open Sans';
-  position: relative; }
+  position: relative;
+  scroll-behavior: smooth; }
