@@ -13,7 +13,6 @@ html {
   }
 }
 
-
 body {
   font-family: 'Nunito Sans';
 }
@@ -77,7 +76,7 @@ body {
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
     ),
-    url('/assets/man_by_screens.jpg');
+    url('../assets/man_by_screens.jpg');
   background-color: rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,23 +203,23 @@ body {
 }
 
 .skills__skill-image-html {
-  background-image: url('/assets/html5.png');
+  background-image: url('../assets/html5.png');
 }
 
 .skills__skill-image-css {
-  background-image: url('/assets/css3.png');
+  background-image: url('../assets/css3.png');
 }
 
 .skills__skill-image-es {
-  background-image: url('/assets/es6.png');
+  background-image: url('../assets/es6.png');
 }
 
 .skills__skill-image-react {
-  background-image: url('/assets/react.png');
+  background-image: url('../assets/react.png');
 }
 
 .skills__skill-image-git {
-  background-image: url('/assets/git.png');
+  background-image: url('../assets/git.png');
 }
 
 .projects {
@@ -260,7 +259,7 @@ body {
       rgba(0, 0, 0, 0.1), 
       rgba(0, 0, 0, 0.1)
     ),
-    url('/assets/maze_game.png');
+    url('../assets/maze_game.png');
 }
 
 .projects__img-2 {
@@ -269,7 +268,7 @@ body {
       rgba(0, 0, 0, 0.1), 
       rgba(0, 0, 0, 0.1)
     ),
-    url('/assets/pokedex.png');
+    url('../assets/pokedex.png');
 }
 
 .projects__img-3 {
@@ -278,7 +277,7 @@ body {
       rgba(0, 0, 0, 0.1), 
       rgba(0, 0, 0, 0.1)
     ),
-    url('/assets/portfolio.png');
+    url('../assets/portfolio.png');
 }
 
 .projects__img {
