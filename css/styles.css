@@ -4,7 +4,8 @@
 }
 
 html {
-  font-size: 8px;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 @media(min-width: 1000px) {
@@ -20,7 +21,7 @@ body {
 .navbar {
   position: absolute;
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -42,8 +43,8 @@ body {
 }
 
 .navbar__logo-L, .navbar__logo-B {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .navbar__list {
@@ -57,12 +58,11 @@ body {
   align-items: center;
   height: 100%;
   padding: 0rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navbar__list-item:hover {
   background-color:  rgba(255, 255, 255, 0.1);
-  
 }
 
 .navbar__link {
@@ -92,7 +92,7 @@ body {
 .header__text {
   font-weight: 700;
   color: #ffffff;
-  font-size: 6rem;
+  font-size: 5rem;
   text-shadow: 3px 3px var(--primary);
   text-align: center;
   line-height: 1.2em;
@@ -100,11 +100,19 @@ body {
 
 .header__button {
   font-size: 1.5rem;
+  text-decoration: none;
   margin-top: 2rem;
   padding: 1rem 3rem;
   border-radius: 3rem;
   background-color: var(--primary);
   color: #ffffff;
+  transition: 0.2s;
+}
+
+.header__button:hover {
+  background-color: #fff;
+  color: var(--primary);
+  transition: 0.5s;
 }
 
 .about {
@@ -116,9 +124,9 @@ body {
 }
 
 .about__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 4rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .about__title-highlighted-word {
@@ -158,9 +166,9 @@ body {
 }
 
 .skills__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin: 4rem; 
+  margin: 4rem 0 2rem 0; 
   
 }
 
@@ -179,7 +187,7 @@ body {
 
 .skills__skill {
   width: 200px;
-  margin: git 1.5rem;
+  margin: 1.5rem;
 }
 
 .skills__skill-title {
@@ -231,9 +239,9 @@ body {
 }
 
 .projects__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin: 4rem; 
+  margin: 4rem 0 2rem 0; 
 }
 
 .projects__title-highlighted-word {
@@ -250,7 +258,35 @@ body {
 
 .projects__project {
   margin: 1rem;
-  width: 450px;
+  max-width: 450px;
+}
+
+.projects__img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 500px) {
+  .projects__project {
+    width: 300px;
+  } 
+  .projects__img {
+    height: 200px;
+  }
+ }
+
+.projects__img > *{
+  display: none;
+  color: white;
+  opacity: 1;
+}
+
+.projects__img:hover > * {
+  display: flex;
 }
 
 .projects__img-1 {
@@ -260,6 +296,8 @@ body {
       rgba(0, 0, 0, 0.1)
     ),
     url('../assets/maze_game.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .projects__img-2 {
@@ -269,6 +307,8 @@ body {
       rgba(0, 0, 0, 0.1)
     ),
     url('../assets/pokedex.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .projects__img-3 {
@@ -278,42 +318,86 @@ body {
       rgba(0, 0, 0, 0.1)
     ),
     url('../assets/portfolio.png');
+    background-size: cover;
+    background-position: center;
 }
 
-.projects__img {
-  width: 100%;
-  height: 300px;
+.projects__img-1:hover {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../assets/maze_game.png');
   background-size: cover;
   background-position: center;
-  position: relative;
-  transition: all 1s;
 }
 
-.projects__img:after {
-  content: '\A';
-  position: absolute;
-  width: 100%; 
-  height:100%;
-  top:0; 
-  left:0;
-  background:rgba(0,0,0,0.5);
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-}
-.projects__img:hover:after {
-  opacity: 1;
+.projects__img-2:hover {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../assets/pokedex.png');
+  background-size: cover;
+  background-position: center;
 }
 
+.projects__img-3:hover {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../assets/portfolio.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__box-content {
+  padding-top: 3rem;
+  flex-direction: column;
+}
+
+.projects__box-title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.projects__box-tech {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.projects__buttons {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.projects__button {
+  margin: 1rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.projects__button:hover {
+  filter: invert(1);
+}
 
 .projects__project-title {
-  margin: 1rem;
+  margin: 2rem;
   text-align: center;
   font-size: 2rem;
 }
 
 .projects__project-description {
+  height: 60px;
   margin-bottom: 1rem;
   font-size: 1.2rem;
   text-align: center;
@@ -324,20 +408,20 @@ body {
   background-color: var(--secondary);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer__title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin: 3rem auto;
+  margin: 3rem 0 1.5rem;
   color: #fff;
 }
-
-
 
 .footer__social-media {
   display: flex;
   justify-content: center;
+  height: 80px;
 }
 
 .footer__link {
@@ -345,9 +429,20 @@ body {
 }
 
 .footer__sm-icon {
-  width: 50px;
+  width: 30px;
   display: flex;
   justify-content: flex-start;
   filter: invert(1);
+  transition: 0.3s;
 }
 
+.footer__sm-icon:hover {
+  width: 35px;
+  transition: 0.3s;
+}
+
+.footer__email {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
