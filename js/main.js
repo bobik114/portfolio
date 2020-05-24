@@ -9,5 +9,4 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.classList.toggle("navbar--collapse")
     })
 
-
  })

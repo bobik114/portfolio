@@ -366,6 +366,14 @@ body {
   display: flex;
 }
 
+.projects__img:focus > * {
+  display: flex;
+}
+
+.projects__img:checked > * {
+  display: flex;
+}
+
 .projects__img-1 {
   background: 
     linear-gradient(
@@ -433,7 +441,7 @@ body {
 }
 
 .projects__box-content {
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   flex-direction: column;
 }
 
