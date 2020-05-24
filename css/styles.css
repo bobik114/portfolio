@@ -441,8 +441,14 @@ body {
 }
 
 .projects__box-content {
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   flex-direction: column;
+}
+
+@media(max-width: 1024px) {
+  .projects__box-content {
+    padding-top: 2rem;
+  }
 }
 
 .projects__box-title {
