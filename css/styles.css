@@ -398,6 +398,17 @@ body {
     background-position: center;
 }
 
+.projects__img-4 {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.1)
+    ),
+    url('../assets/giveaway.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .projects__img-1:hover {
   background: 
     linear-gradient(
@@ -427,6 +438,17 @@ body {
       rgba(0, 0, 0, 0.8)
     ),
     url('../assets/portfolio.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__img-4:hover {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../assets/giveaway.png');
   background-size: cover;
   background-position: center;
 }
